@@ -215,6 +215,13 @@
       text-align: center;
     }
 
+    .hero-subheadline span {
+      background: linear-gradient(135deg, #10b981, #047857);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
+    }
+
     @media (min-width: 768px) {
       .hero-subheadline {
         font-size: 21px;
@@ -257,7 +264,8 @@
     .ticker-track {
       display: flex;
       white-space: nowrap;
-      animation: ticker 35s linear infinite;
+      animation: ticker 40s linear infinite;
+      width: max-content;
     }
 
     .ticker-item {
@@ -306,131 +314,6 @@
     /* SEÇÃO 03 --- FEEDBACKS */
     .sec-03 {
       background-color: #f9fafb;
-    }
-
-    .proof-container {
-      margin-bottom: 40px;
-      text-align: center;
-    }
-
-    .proof-title-1 {
-      color: #1a1a1a;
-      font-size: 28px;
-      font-weight: 900;
-      line-height: 1.1;
-    }
-
-    @media (min-width: 768px) {
-      .proof-title-1 {
-        font-size: 52px;
-      }
-    }
-
-    .proof-title-2 {
-      font-size: 48px;
-      font-weight: 900;
-      line-height: 1.1;
-    }
-
-    @media (min-width: 768px) {
-      .proof-title-2 {
-        font-size: 60px;
-      }
-    }
-
-    .proof-title-2 span {
-      background: linear-gradient(135deg, #10b981, #047857);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .proof-sep {
-      height: 3px;
-      width: 80px;
-      background: linear-gradient(90deg, #10b981, #047857);
-      border-radius: 2px;
-      margin: 12px auto 20px;
-      box-shadow: 0 0 15px rgba(16, 185, 129, 0.7);
-    }
-
-    .approval-card {
-      background: hsl(140, 45%, 8%);
-      border-radius: 50px;
-      display: inline-flex;
-      align-items: center;
-      padding: 10px 20px;
-      gap: 12px;
-      border: 2px solid #10b981;
-      margin: 0 auto;
-    }
-
-    @media (min-width: 768px) {
-      .approval-card {
-        padding: 9px 22px;
-      }
-    }
-
-    .avatar-group {
-      display: flex;
-      align-items: center;
-    }
-
-    .avatar-img {
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      border: 2px solid #ffffff;
-      background-color: #2a2a2a;
-      margin-left: -10px;
-    }
-
-    @media (min-width: 768px) {
-      .avatar-img {
-        width: 43px;
-        height: 43px;
-      }
-    }
-
-    .avatar-img:first-child {
-      margin-left: 0;
-    }
-
-    .proof-divider {
-      width: 1px;
-      background: rgba(255,255,255,0.25);
-      height: 32px;
-      margin: 0 16px;
-    }
-
-    .proof-count {
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-      text-align: left;
-    }
-
-    .proof-count-line1 {
-      color: #ffffff;
-      font-size: 14px;
-      font-weight: 400;
-    }
-
-    @media (min-width: 768px) {
-      .proof-count-line1 {
-        font-size: 15px;
-      }
-    }
-
-    .proof-count-line2 {
-      color: #10b981;
-      font-size: 18px;
-      font-weight: 700;
-    }
-
-    @media (min-width: 768px) {
-      .proof-count-line2 {
-        font-size: 20px;
-      }
     }
 
     .slideshow-wrapper {
@@ -653,7 +536,9 @@
     }
 
     .bonus-price s {
+      color: #ef4444;
       text-decoration: line-through;
+      text-decoration-color: #ef4444;
     }
 
     .bonus-price-zero {
@@ -688,6 +573,7 @@
     .sec-07 {
       background-color: hsl(140, 45%, 6%);
       color: #ffffff;
+      padding-bottom: 80px;
     }
 
     .sec-07 h2 {
@@ -703,7 +589,13 @@
       text-align: center;
       font-size: 17px;
       color: #d1d5db;
-      margin-bottom: 32px;
+      margin-bottom: 48px;
+    }
+
+    @media (min-width: 768px) {
+      .oferta-subheadline {
+        margin-bottom: 60px;
+      }
     }
 
     .offers-grid {
@@ -736,6 +628,12 @@
     }
 
     .card-basic {
+      order: 1;
+    }
+
+    .card-premium {
+      border: 2px solid #10b981;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 30px rgba(16, 185, 129, 0.4);
       order: 2;
     }
 
@@ -743,15 +641,6 @@
       .card-basic {
         order: 1;
       }
-    }
-
-    .card-premium {
-      border: 2px solid #10b981;
-      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 30px rgba(16, 185, 129, 0.4);
-      order: 1;
-    }
-
-    @media (min-width: 768px) {
       .card-premium {
         order: 2;
         transform: scale(1.04);
@@ -797,8 +686,9 @@
 
     .price-old-val {
       font-size: 15px;
-      color: rgba(255,255,255,0.4);
+      color: #ef4444;
       text-decoration: line-through;
+      text-decoration-color: #ef4444;
     }
 
     .price-current-val {
@@ -899,27 +789,6 @@
       0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.6); }
       70% { box-shadow: 0 0 0 16px rgba(16, 185, 129, 0); }
       100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
-    }
-
-    .guarantee-mention {
-      font-size: 13px;
-      color: rgba(255, 255, 255, 0.7);
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    .final-anchor {
-      text-align: center;
-      font-size: 16px;
-      color: #d1d5db;
-      margin-top: 24px;
-      margin-bottom: 0;
-    }
-
-    @media (min-width: 768px) {
-      .final-anchor {
-        font-size: 18px;
-      }
     }
 
     /* SEÇÃO 08 --- PERGUNTAS E RESPOSTAS */
@@ -1055,7 +924,7 @@
           Alfabetize Seu Filho em Casa Sem Telas Com <span>700 Atividades Prontas</span>
         </h1>
         <p class="hero-subheadline">
-          Baixe e imprima os cadernos lúdicos de Português e Matemática que aceleram a leitura e o raciocínio da sua criança.
+          Baixe e imprima os cadernos lúdicos de <span>Português e Matemática</span> que aceleram a <span>leitura e o raciocínio</span> da sua criança.
         </p>
       </div>
       <div class="hero-container-2">
@@ -1069,8 +938,16 @@
   <!-- TICKER 1 -->
   <div class="ticker-wrapper">
     <div class="ticker-track">
-      <div class="ticker-item">700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span></div>
-      <div class="ticker-item">700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span></div>
+      <div class="ticker-item">
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+      </div>
+      <div class="ticker-item">
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+      </div>
     </div>
   </div>
 
@@ -1087,35 +964,21 @@
   <!-- TICKER 2 -->
   <div class="ticker-wrapper">
     <div class="ticker-track">
-      <div class="ticker-item">700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span></div>
-      <div class="ticker-item">700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span></div>
+      <div class="ticker-item">
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+      </div>
+      <div class="ticker-item">
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+      </div>
     </div>
   </div>
 
   <!-- SEÇÃO 03 --- FEEDBACKS -->
   <section class="sec-03">
-    <div class="section-content">
-      <div class="proof-container">
-        <div class="proof-title-1">PROGRAMA</div>
-        <div class="proof-title-2"><span>APROVADO</span></div>
-        <div class="proof-sep"></div>
-        <div class="approval-card">
-          <div class="avatar-group">
-            <div class="avatar-img" id="avatar1"></div>
-            <div class="avatar-img" id="avatar2"></div>
-            <div class="avatar-img" id="avatar3"></div>
-            <div class="avatar-img" id="avatar4"></div>
-            <div class="avatar-img" id="avatar5"></div>
-          </div>
-          <div class="proof-divider"></div>
-          <div class="proof-count">
-            <span class="proof-count-line1">Aprovado por</span>
-            <span class="proof-count-line2">+1.200 mães</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="slideshow-wrapper">
       <div class="slideshow-track">
         <!-- 6 originais -->
@@ -1145,8 +1008,16 @@
   <!-- TICKER 3 -->
   <div class="ticker-wrapper">
     <div class="ticker-track">
-      <div class="ticker-item">700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span></div>
-      <div class="ticker-item">700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span></div>
+      <div class="ticker-item">
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+      </div>
+      <div class="ticker-item">
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+      </div>
     </div>
   </div>
 
@@ -1192,8 +1063,16 @@
   <!-- TICKER 4 -->
   <div class="ticker-wrapper">
     <div class="ticker-track">
-      <div class="ticker-item">700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span></div>
-      <div class="ticker-item">700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span></div>
+      <div class="ticker-item">
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+      </div>
+      <div class="ticker-item">
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+      </div>
     </div>
   </div>
 
@@ -1234,8 +1113,16 @@
   <!-- TICKER 5 -->
   <div class="ticker-wrapper">
     <div class="ticker-track">
-      <div class="ticker-item">700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span></div>
-      <div class="ticker-item">700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span></div>
+      <div class="ticker-item">
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+      </div>
+      <div class="ticker-item">
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+      </div>
     </div>
   </div>
 
@@ -1253,8 +1140,16 @@
   <!-- TICKER 6 -->
   <div class="ticker-wrapper">
     <div class="ticker-track">
-      <div class="ticker-item">700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span></div>
-      <div class="ticker-item">700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span></div>
+      <div class="ticker-item">
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+      </div>
+      <div class="ticker-item">
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+      </div>
     </div>
   </div>
 
@@ -1320,21 +1215,26 @@
               SIM! QUERO O PREMIUM POR R$9,90 →
               <span class="btn-subtext">Pagamento Único · Acesso Vitalício</span>
             </a>
-            <div class="guarantee-mention">🔒 Garantia Incondicional de 30 Dias</div>
           </div>
         </div>
 
       </div>
-
-      <p class="final-anchor">São R$4 de diferença pra levar tudo. Você decide.</p>
     </div>
   </section>
 
   <!-- TICKER 7 -->
   <div class="ticker-wrapper">
     <div class="ticker-track">
-      <div class="ticker-item">700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span></div>
-      <div class="ticker-item">700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span></div>
+      <div class="ticker-item">
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+      </div>
+      <div class="ticker-item">
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+        700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span>
+      </div>
     </div>
   </div>
 
