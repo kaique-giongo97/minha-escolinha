@@ -587,21 +587,33 @@
       flex-direction: column;
       justify-content: space-between;
       position: relative;
-      background: linear-gradient(160deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04) 45%, rgba(255, 255, 255, 0.08));
-      backdrop-filter: blur(20px) saturate(180%);
-      -webkit-backdrop-filter: blur(20px) saturate(180%);
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35), inset 0 -1px 0 rgba(255, 255, 255, 0.06), 0 24px 60px rgba(0, 0, 0, 0.4);
+      transition: all 0.3s ease;
     }
 
+    /* CARD BÁSICO COM COR MAIS FRACA PARA ALTO CONTRASTE */
     .card-basic {
       order: 1;
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(12px) saturate(140%);
+      -webkit-backdrop-filter: blur(12px) saturate(140%);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      opacity: 0.78;
     }
 
+    .card-basic:hover {
+      opacity: 0.95;
+    }
+
+    /* CARD PREMIUM COM DESTAQUE VIBRANTE */
     .card-premium {
-      border: 2px solid #10b981;
-      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 30px rgba(16, 185, 129, 0.4);
       order: 2;
+      background: linear-gradient(160deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.05) 45%, rgba(255, 255, 255, 0.10));
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      border: 2px solid #10b981;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 35px rgba(16, 185, 129, 0.45), 0 24px 60px rgba(0, 0, 0, 0.5);
+      opacity: 1;
     }
 
     @media (min-width: 768px) {
@@ -656,6 +668,7 @@
       color: #ef4444;
       text-decoration: line-through;
       text-decoration-color: #ef4444;
+      font-weight: 600;
     }
 
     .price-current-val {
@@ -729,7 +742,7 @@
     }
 
     .btn-basic-card {
-      opacity: 0.9;
+      opacity: 0.85;
     }
 
     .btn-cta:hover {
@@ -1121,7 +1134,7 @@
           </div>
           <div>
             <a href="https://www.instagram.com/kaique.giongo/" target="_blank" rel="noopener noreferrer" class="btn-cta btn-basic-card">
-              SIM! ACESSAR POR R$5,90 →
+              ACESSO BÁSICO POR R$5,90 →
               <span class="btn-subtext">Pagamento Único · Acesso Vitalício</span>
             </a>
           </div>
@@ -1134,7 +1147,7 @@
             <h3 class="offer-title">Acesso Premium</h3>
             <p class="offer-positioning">Pra quem quer o caminho inteiro, sem nenhum atalho faltando.</p>
             <div class="price-box">
-              <span class="price-old-val">29,90</span>
+              <span class="price-old-val">49,90</span>
               <div class="price-current-val">R$9,90</div>
               <span class="price-period">Pagamento único</span>
             </div>
@@ -1150,7 +1163,7 @@
           </div>
           <div>
             <a href="https://www.instagram.com/kaique.giongo/" target="_blank" rel="noopener noreferrer" class="btn-cta">
-              SIM! QUERO O PREMIUM POR R$9,90 →
+              ACESSO PREMIUM POR R$9,90 →
               <span class="btn-subtext">Pagamento Único · Acesso Vitalício</span>
             </a>
           </div>
