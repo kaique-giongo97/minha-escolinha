@@ -292,23 +292,53 @@
       100% { transform: translateX(-50%); }
     }
 
-    /* SEÇÃO 02 --- DEMONSTRATIVO */
+    /* SEÇÃO 02 --- DEMONSTRATIVO SLIDESHOW */
     .sec-02 {
       background-color: hsl(140, 45%, 6%);
       color: #ffffff;
+      padding-bottom: 60px;
     }
 
     .sec-02 h2 {
       color: #ffffff;
     }
 
-    #demo-print {
-      width: 100%;
-      max-width: 400px;
+    .demo-slideshow-wrapper {
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    .demo-slideshow-track {
+      display: flex;
+      gap: 0; /* IMAGENS COLADAS UMAS ÀS OUTRAS */
+      animation: demoScroll 30s linear infinite;
+      width: max-content;
+    }
+
+    .demo-slide-card {
+      width: 70vw;
       aspect-ratio: 4/5;
       height: auto;
-      margin: 0 auto;
-      display: flex;
+      flex-shrink: 0;
+      border-radius: 0;
+      border: 1px dashed rgba(255, 255, 255, 0.2);
+      background-color: #1e293b;
+    }
+
+    @media (min-width: 768px) {
+      .demo-slide-card {
+        width: 320px;
+      }
+    }
+
+    @keyframes demoScroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
     }
 
     /* SEÇÃO 04 --- BENEFÍCIOS DO PRODUTO */
@@ -883,12 +913,28 @@
     </div>
   </div>
 
-  <!-- SEÇÃO 02 --- DEMONSTRATIVO -->
+  <!-- SEÇÃO 02 --- DEMONSTRATIVO (SLIDESHOW DOS PRODUTOS COLADOS) -->
   <section class="sec-02">
     <div class="section-content">
       <h2>Dá uma olhada no que você vai ter <span>acesso:</span></h2>
-      <div class="img-placeholder" id="demo-print">
-        [ Vídeo Demonstrativo ]
+    </div>
+
+    <div class="demo-slideshow-wrapper">
+      <div class="demo-slideshow-track">
+        <!-- 6 slides originais -->
+        <div class="img-placeholder demo-slide-card" id="demo-slide1">[ Amostra 1 ]</div>
+        <div class="img-placeholder demo-slide-card" id="demo-slide2">[ Amostra 2 ]</div>
+        <div class="img-placeholder demo-slide-card" id="demo-slide3">[ Amostra 3 ]</div>
+        <div class="img-placeholder demo-slide-card" id="demo-slide4">[ Amostra 4 ]</div>
+        <div class="img-placeholder demo-slide-card" id="demo-slide5">[ Amostra 5 ]</div>
+        <div class="img-placeholder demo-slide-card" id="demo-slide6">[ Amostra 6 ]</div>
+        <!-- 6 slides cópias idênticas para o loop infinito sem emenda -->
+        <div class="img-placeholder demo-slide-card">[ Amostra 1 ]</div>
+        <div class="img-placeholder demo-slide-card">[ Amostra 2 ]</div>
+        <div class="img-placeholder demo-slide-card">[ Amostra 3 ]</div>
+        <div class="img-placeholder demo-slide-card">[ Amostra 4 ]</div>
+        <div class="img-placeholder demo-slide-card">[ Amostra 5 ]</div>
+        <div class="img-placeholder demo-slide-card">[ Amostra 6 ]</div>
       </div>
     </div>
   </section>
