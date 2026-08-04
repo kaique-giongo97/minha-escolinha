@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10b981">
+  <title>Minha Escolinha</title>
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✏️</text></svg>">
+  <meta name="description" content="Kit com 700 atividades infantis em PDF para alfabetização, português, matemática e inglês. Ensine seu filho em casa sem telas. A partir de R$5,90.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Minha Escolinha">
+  <meta property="og:description" content="Alfabetize Seu Filho em Casa Sem Telas Com 700 Atividades Prontas">
+  <meta property="og:image" content="">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Minha Escolinha">
+  <meta name="twitter:description" content="Alfabetize Seu Filho em Casa Sem Telas Com 700 Atividades Prontas">
+
+  <!-- Utmify Scripts -->
+  <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck data-utmify-prevent-subids data-utmify-ignore-iframe data-utmify-is-cartpanda async defer></script>
+  <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck data-utmify-prevent-subids data-pixel-id="depois" async defer></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* RESET & BASE */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      overflow-x: hidden;
+      scrollbar-color: #10b981 #09170f;
+    }
+
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #09170f;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, #10b981, #047857);
+      border-radius: 5px;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 18px;
+      line-height: 1.18;
+      letter-spacing: -0.03em;
+      color: #1a1a1a;
+      background-color: #ffffff;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* HEADLINES GLOBAL */
+    h1, h2, h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 28px;
+      line-height: 1.18;
+      letter-spacing: -0.03em;
+      margin-bottom: 40px;
+      text-align: center;
+      font-weight: 800;
+    }
+
+    @media (min-width: 768px) {
+      h1, h2, h3 {
+        font-size: 36px;
+      }
+    }
+
+    h1 span, h2 span, h3 span {
+      background: linear-gradient(135deg, #10b981, #047857);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.03em;
+      line-height: 1.18;
+    }
+
+    p, li, label {
+      letter-spacing: -0.03em;
+      line-height: 1.18;
+    }
+
+    /* SECTIONS GLOBAL */
+    section {
+      width: 100%;
+      padding: 60px 15px;
+      overflow-x: hidden;
+    }
+
+    @media (min-width: 768px) {
+      section {
+        padding: 80px 15px;
+      }
+    }
+
+    .section-content {
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* PLACEHOLDER DIVS */
+    .img-placeholder {
+      background-color: #2a2a2a;
+      border: 2px dashed #4b5563;
+      border-radius: 12px;
+      color: #9ca3af;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 600;
+      padding: 20px;
+      user-select: none;
+    }
+
+    /* URGENT BAR TOP */
+    .urgent-bar {
+      position: static;
+      width: 100%;
+      background: linear-gradient(135deg, #10b981, #047857);
+      color: #ffffff;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 10px 5px;
+      line-height: 1.2;
+    }
+
+    @media (min-width: 768px) {
+      .urgent-bar {
+        font-size: 16px;
+        padding: 12px 16px;
+      }
+    }
+
+    #current-date {
+      font-size: 13px;
+    }
+    @media (min-width: 768px) {
+      #current-date {
+        font-size: 16px;
+      }
+    }
+
+    /* SEÇÃO 01 --- VENDA IMEDIATA */
+    .sec-01 {
+      padding-top: 40px;
+      padding-bottom: 60px;
+      background-color: #ffffff;
+    }
+
+    @media (min-width: 768px) {
+      .sec-01 {
+        padding: 80px 15px;
+      }
+      .sec-01 .section-content-hero {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .hero-container-1 {
+      flex: 1;
+    }
+
+    @media (min-width: 768px) {
+      .hero-container-1 {
+        margin-right: 130px;
+        text-align: left;
+      }
+    }
+
+    .hero-container-2 {
+      flex: 1;
+      width: 100%;
+    }
+
+    .hero-headline {
+      font-size: 28px;
+      line-height: 1.15;
+      margin-bottom: 15px;
+      margin-top: -15px;
+      text-align: center;
+      font-weight: 800;
+    }
+
+    @media (min-width: 768px) {
+      .hero-headline {
+        font-size: 42px;
+        text-align: left;
+      }
+    }
+
+    .hero-subheadline {
+      font-size: 18px;
+      line-height: 1.3;
+      margin-bottom: 0;
+      color: #4b5563;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .hero-subheadline {
+        font-size: 21px;
+        text-align: left;
+      }
+    }
+
+    #hero-mockup {
+      width: 85%;
+      height: 280px;
+      margin: 20px auto 0 auto;
+    }
+
+    @media (min-width: 768px) {
+      #hero-mockup {
+        width: 100%;
+        height: 400px;
+        margin: 0;
+      }
+    }
+
+    /* TICKER ROLANTE */
+    .ticker-wrapper {
+      width: 100vw;
+      margin-left: calc(-50vw + 50%);
+      height: 44px;
+      background-color: hsl(140, 45%, 6%);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .ticker-wrapper {
+        height: 52px;
+      }
+    }
+
+    .ticker-track {
+      display: flex;
+      white-space: nowrap;
+      animation: ticker 35s linear infinite;
+    }
+
+    .ticker-item {
+      font-size: 14px;
+      font-weight: 700;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+    }
+
+    @media (min-width: 768px) {
+      .ticker-item {
+        font-size: 16px;
+      }
+    }
+
+    .ticker-sep {
+      color: #10b981;
+      padding: 0 12px;
+    }
+
+    @keyframes ticker {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* SEÇÃO 02 --- DEMONSTRATIVO */
+    .sec-02 {
+      background-color: hsl(140, 45%, 6%);
+      color: #ffffff;
+    }
+
+    .sec-02 h2 {
+      color: #ffffff;
+    }
+
+    #demo-print {
+      width: 100%;
+      max-width: 400px;
+      aspect-ratio: 4/5;
+      height: auto;
+      margin: 0 auto;
+      display: flex;
+    }
+
+    /* SEÇÃO 03 --- FEEDBACKS */
+    .sec-03 {
+      background-color: #f9fafb;
+    }
+
+    .proof-container {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .proof-title-1 {
+      color: #1a1a1a;
+      font-size: 28px;
+      font-weight: 900;
+      line-height: 1.1;
+    }
+
+    @media (min-width: 768px) {
+      .proof-title-1 {
+        font-size: 52px;
+      }
+    }
+
+    .proof-title-2 {
+      font-size: 48px;
+      font-weight: 900;
+      line-height: 1.1;
+    }
+
+    @media (min-width: 768px) {
+      .proof-title-2 {
+        font-size: 60px;
+      }
+    }
+
+    .proof-title-2 span {
+      background: linear-gradient(135deg, #10b981, #047857);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .proof-sep {
+      height: 3px;
+      width: 80px;
+      background: linear-gradient(90deg, #10b981, #047857);
+      border-radius: 2px;
+      margin: 12px auto 20px;
+      box-shadow: 0 0 15px rgba(16, 185, 129, 0.7);
+    }
+
+    .approval-card {
+      background: hsl(140, 45%, 8%);
+      border-radius: 50px;
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 20px;
+      gap: 12px;
+      border: 2px solid #10b981;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 768px) {
+      .approval-card {
+        padding: 9px 22px;
+      }
+    }
+
+    .avatar-group {
+      display: flex;
+      align-items: center;
+    }
+
+    .avatar-img {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 2px solid #ffffff;
+      background-color: #2a2a2a;
+      margin-left: -10px;
+    }
+
+    @media (min-width: 768px) {
+      .avatar-img {
+        width: 43px;
+        height: 43px;
+      }
+    }
+
+    .avatar-img:first-child {
+      margin-left: 0;
+    }
+
+    .proof-divider {
+      width: 1px;
+      background: rgba(255,255,255,0.25);
+      height: 32px;
+      margin: 0 16px;
+    }
+
+    .proof-count {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      text-align: left;
+    }
+
+    .proof-count-line1 {
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    @media (min-width: 768px) {
+      .proof-count-line1 {
+        font-size: 15px;
+      }
+    }
+
+    .proof-count-line2 {
+      color: #10b981;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    @media (min-width: 768px) {
+      .proof-count-line2 {
+        font-size: 20px;
+      }
+    }
+
+    .slideshow-wrapper {
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      overflow: hidden;
+      margin: 0 0 20px 0;
+      padding: 0;
+    }
+
+    @media (min-width: 768px) {
+      .slideshow-wrapper {
+        margin-bottom: 0;
+      }
+    }
+
+    .slideshow-track {
+      display: flex;
+      gap: 16px;
+      animation: feedbackScroll 20s linear infinite;
+      width: max-content;
+    }
+
+    .feedback-card {
+      width: 80vw;
+      aspect-ratio: 1/1;
+      height: auto;
+      flex-shrink: 0;
+    }
+
+    @media (min-width: 768px) {
+      .feedback-card {
+        width: 300px;
+      }
+    }
+
+    @keyframes feedbackScroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .f-cta-text {
+      color: #10b981;
+      font-size: 18px;
+      font-weight: 700;
+      text-align: center;
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 768px) {
+      .f-cta-text {
+        font-size: 24px;
+      }
+    }
+
+    .f-cta-text span {
+      background: linear-gradient(135deg, #10b981, #047857);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* SEÇÃO 04 --- BENEFÍCIOS DO PRODUTO */
+    .sec-04 {
+      background-color: #ffffff;
+    }
+
+    .sec-04 .section-content {
+      max-width: 1000px;
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    @media (min-width: 768px) {
+      .benefits-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+    }
+
+    .benefit-card {
+      background-color: #ffffff;
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      border-radius: 12px;
+      padding: 24px;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .benefit-card:hover {
+        transform: translateY(-15px) scale(1.03);
+        box-shadow: 0 0 12px rgba(16, 185, 129, 0.35);
+      }
+    }
+
+    .benefit-card.mobile-active {
+      transform: translateY(-15px) scale(1.03);
+      box-shadow: 0 0 12px rgba(16, 185, 129, 0.35);
+      border-color: rgba(16, 185, 129, 0.4);
+      background-color: rgba(16, 185, 129, 0.03);
+    }
+
+    .benefit-icon {
+      font-size: 36px;
+      margin: 0 auto 12px auto;
+      text-align: center;
+    }
+
+    .benefit-title {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #1a1a1a;
+      text-align: center;
+    }
+
+    .benefit-desc {
+      font-size: 17px;
+      color: #4b5563;
+      line-height: 1.4;
+      text-align: center;
+    }
+
+    /* SEÇÃO 05 --- 3 BÔNUS EXCLUSIVOS */
+    .sec-05 {
+      background-color: hsl(140, 45%, 6%);
+      color: #ffffff;
+    }
+
+    .sec-05 h2 {
+      color: #ffffff;
+    }
+
+    .sec-05 .section-content {
+      max-width: 1200px;
+    }
+
+    .bonus-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 768px) {
+      .bonus-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .bonus-card {
+      background: linear-gradient(160deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04) 45%, rgba(255, 255, 255, 0.08));
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 0 rgba(255, 255, 255, 0.05), 0 20px 50px rgba(0,0,0,0.35);
+      border-radius: 16px;
+      padding: 24px;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .bonus-card:hover {
+        transform: translateY(-15px) scale(1.03);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 20px rgba(16, 185, 129, 0.4);
+      }
+    }
+
+    .bonus-mockup {
+      width: 100%;
+      height: 180px;
+      margin-bottom: 16px;
+    }
+
+    .bonus-badge {
+      align-self: center;
+      background: linear-gradient(135deg, #10b981, #047857);
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 14px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    .bonus-name {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .bonus-desc {
+      font-size: 16px;
+      color: #d1d5db;
+      line-height: 1.4;
+      margin-bottom: 16px;
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    .bonus-price {
+      font-size: 16px;
+      color: #9ca3af;
+      text-align: center;
+    }
+
+    .bonus-price s {
+      text-decoration: line-through;
+    }
+
+    .bonus-price-zero {
+      color: #10b981;
+      font-size: 18px;
+      font-weight: 800;
+      margin-left: 6px;
+    }
+
+    /* SEÇÃO 06 --- GARANTIA */
+    .sec-06 {
+      background-color: #f9fafb;
+      text-align: center;
+    }
+
+    .guarantee-icon {
+      font-size: 64px;
+      margin: 0 auto 16px auto;
+      text-align: center;
+    }
+
+    .guarantee-text {
+      font-size: 17px;
+      color: #374151;
+      line-height: 1.4;
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    /* SEÇÃO 07 --- ESCOLHA SEU ACESSO */
+    .sec-07 {
+      background-color: hsl(140, 45%, 6%);
+      color: #ffffff;
+    }
+
+    .sec-07 h2 {
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+
+    .sec-07 .section-content {
+      max-width: 1000px;
+    }
+
+    .oferta-subheadline {
+      text-align: center;
+      font-size: 17px;
+      color: #d1d5db;
+      margin-bottom: 32px;
+    }
+
+    .offers-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    @media (min-width: 768px) {
+      .offers-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        align-items: stretch;
+      }
+    }
+
+    .card-offer {
+      border-radius: 20px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      background: linear-gradient(160deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04) 45%, rgba(255, 255, 255, 0.08));
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35), inset 0 -1px 0 rgba(255, 255, 255, 0.06), 0 24px 60px rgba(0, 0, 0, 0.4);
+    }
+
+    .card-basic {
+      order: 2;
+    }
+
+    @media (min-width: 768px) {
+      .card-basic {
+        order: 1;
+      }
+    }
+
+    .card-premium {
+      border: 2px solid #10b981;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 30px rgba(16, 185, 129, 0.4);
+      order: 1;
+    }
+
+    @media (min-width: 768px) {
+      .card-premium {
+        order: 2;
+        transform: scale(1.04);
+      }
+    }
+
+    .ribbon-premium {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, #10b981, #047857);
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 6px 18px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      white-space: nowrap;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .offer-title {
+      font-size: 22px;
+      font-weight: 800;
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+
+    .offer-positioning {
+      font-size: 14px;
+      color: #d1d5db;
+      text-align: center;
+      margin-bottom: 20px;
+      min-height: 40px;
+    }
+
+    .price-box {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .price-old-val {
+      font-size: 15px;
+      color: rgba(255,255,255,0.4);
+      text-decoration: line-through;
+    }
+
+    .price-current-val {
+      font-size: 48px;
+      font-weight: 900;
+      color: #10b981;
+      line-height: 1;
+      margin: 4px 0;
+    }
+
+    .price-period {
+      font-size: 13px;
+      color: rgba(255,255,255,0.6);
+    }
+
+    .offer-list {
+      list-style: none;
+      margin-bottom: 28px;
+      flex-grow: 1;
+    }
+
+    .offer-item {
+      font-size: 15px;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .offer-item:last-child {
+      border-bottom: none;
+    }
+
+    .offer-item.active {
+      color: #ffffff;
+    }
+
+    .offer-item.blocked-red {
+      color: rgba(239, 68, 68, 0.85);
+      text-decoration: line-through;
+      text-decoration-color: #ef4444;
+    }
+
+    .btn-cta {
+      background: linear-gradient(135deg, #10b981, #047857);
+      color: #ffffff;
+      border-radius: 12px;
+      min-height: 80px;
+      width: 100%;
+      font-size: 18px;
+      font-weight: 800;
+      text-align: center;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 24px rgba(16, 185, 129, 0.35);
+      animation: pulse 2s infinite;
+      white-space: nowrap;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    @media (min-width: 768px) {
+      .btn-cta {
+        font-size: 22px;
+      }
+    }
+
+    .btn-basic-card {
+      opacity: 0.9;
+    }
+
+    .btn-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(16, 185, 129, 0.5);
+      filter: brightness(1.08);
+    }
+
+    .btn-subtext {
+      font-size: 14px;
+      font-weight: normal;
+      opacity: 0.85;
+      display: block;
+      margin-top: 4px;
+    }
+
+    @media (min-width: 768px) {
+      .btn-subtext {
+        font-size: 18px;
+      }
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.6); }
+      70% { box-shadow: 0 0 0 16px rgba(16, 185, 129, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+    }
+
+    .guarantee-mention {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.7);
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .final-anchor {
+      text-align: center;
+      font-size: 16px;
+      color: #d1d5db;
+      margin-top: 24px;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 768px) {
+      .final-anchor {
+        font-size: 18px;
+      }
+    }
+
+    /* SEÇÃO 08 --- PERGUNTAS E RESPOSTAS */
+    .sec-08 {
+      background-color: #ffffff;
+      padding: 40px 15px;
+    }
+
+    @media (min-width: 768px) {
+      .sec-08 {
+        padding: 48px 15px;
+      }
+    }
+
+    .sec-08 .section-content {
+      max-width: 800px;
+    }
+
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 14px;
+    }
+
+    .faq-question {
+      font-size: 18px;
+      letter-spacing: -0.03em;
+      font-weight: 700;
+      color: #1a1a1a;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 20px;
+      user-select: none;
+    }
+
+    .faq-arrow {
+      font-size: 14px;
+      color: #10b981;
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.open .faq-arrow {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      display: none;
+      font-size: 16px;
+      color: #4b5563;
+      line-height: 1.5;
+      margin-top: 10px;
+    }
+
+    .faq-item.open .faq-answer {
+      display: block;
+    }
+
+    /* SEÇÃO 09 --- RODAPÉ */
+    footer {
+      background-color: #f9fafb;
+      padding: 48px 15px;
+      text-align: center;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .footer-brand {
+      font-family: 'Outfit', sans-serif;
+      font-size: 24px;
+      font-weight: 800;
+      background: linear-gradient(135deg, #10b981, #047857);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    .payment-icons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      font-size: 24px;
+      margin-top: 16px;
+      margin-bottom: 20px;
+    }
+
+    .footer-links {
+      font-size: 14px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .footer-links a {
+      color: #10b981;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .footer-disclaimer {
+      font-size: 13px;
+      color: #6b7280;
+      max-width: 600px;
+      margin: 0 auto 16px auto;
+      line-height: 1.4;
+      text-align: center;
+    }
+
+    .footer-copyright {
+      font-size: 13px;
+      color: #9ca3af;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SEÇÃO 01 --- VENDA IMEDIATA -->
+  <div class="urgent-bar">
+    Oferta Acaba Dia <span id="current-date">04 de Agosto</span> às 23:59 👇
+  </div>
+
+  <section class="sec-01">
+    <div class="section-content-hero">
+      <div class="hero-container-1">
+        <h1 class="hero-headline">
+          Alfabetize Seu Filho em Casa Sem Telas Com <span>700 Atividades Prontas</span>
+        </h1>
+        <p class="hero-subheadline">
+          Baixe e imprima os cadernos lúdicos de Português e Matemática que aceleram a leitura e o raciocínio da sua criança.
+        </p>
+      </div>
+      <div class="hero-container-2">
+        <div class="img-placeholder" id="hero-mockup">
+          [ Imagem do Produto ]
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TICKER 1 -->
+  <div class="ticker-wrapper">
+    <div class="ticker-track">
+      <div class="ticker-item">700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span></div>
+      <div class="ticker-item">700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span></div>
+    </div>
+  </div>
+
+  <!-- SEÇÃO 02 --- DEMONSTRATIVO -->
+  <section class="sec-02">
+    <div class="section-content">
+      <h2>Dá uma olhada no que você vai ter <span>acesso:</span></h2>
+      <div class="img-placeholder" id="demo-print">
+        [ Vídeo Demonstrativo ]
+      </div>
+    </div>
+  </section>
+
+  <!-- TICKER 2 -->
+  <div class="ticker-wrapper">
+    <div class="ticker-track">
+      <div class="ticker-item">700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span></div>
+      <div class="ticker-item">700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span></div>
+    </div>
+  </div>
+
+  <!-- SEÇÃO 03 --- FEEDBACKS -->
+  <section class="sec-03">
+    <div class="section-content">
+      <div class="proof-container">
+        <div class="proof-title-1">PROGRAMA</div>
+        <div class="proof-title-2"><span>APROVADO</span></div>
+        <div class="proof-sep"></div>
+        <div class="approval-card">
+          <div class="avatar-group">
+            <div class="avatar-img" id="avatar1"></div>
+            <div class="avatar-img" id="avatar2"></div>
+            <div class="avatar-img" id="avatar3"></div>
+            <div class="avatar-img" id="avatar4"></div>
+            <div class="avatar-img" id="avatar5"></div>
+          </div>
+          <div class="proof-divider"></div>
+          <div class="proof-count">
+            <span class="proof-count-line1">Aprovado por</span>
+            <span class="proof-count-line2">+1.200 mães</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slideshow-wrapper">
+      <div class="slideshow-track">
+        <!-- 6 originais -->
+        <div class="img-placeholder feedback-card" id="feedback1">[ Feedback 1 ]</div>
+        <div class="img-placeholder feedback-card" id="feedback2">[ Feedback 2 ]</div>
+        <div class="img-placeholder feedback-card" id="feedback3">[ Feedback 3 ]</div>
+        <div class="img-placeholder feedback-card" id="feedback4">[ Feedback 4 ]</div>
+        <div class="img-placeholder feedback-card" id="feedback5">[ Feedback 5 ]</div>
+        <div class="img-placeholder feedback-card" id="feedback6">[ Feedback 6 ]</div>
+        <!-- 6 cópias -->
+        <div class="img-placeholder feedback-card">[ Feedback 1 ]</div>
+        <div class="img-placeholder feedback-card">[ Feedback 2 ]</div>
+        <div class="img-placeholder feedback-card">[ Feedback 3 ]</div>
+        <div class="img-placeholder feedback-card">[ Feedback 4 ]</div>
+        <div class="img-placeholder feedback-card">[ Feedback 5 ]</div>
+        <div class="img-placeholder feedback-card">[ Feedback 6 ]</div>
+      </div>
+    </div>
+
+    <div class="section-content">
+      <p class="f-cta-text">
+        Quer os mesmos resultados? Libere o seu acesso ao <span>Minha Escolinha</span> agora!
+      </p>
+    </div>
+  </section>
+
+  <!-- TICKER 3 -->
+  <div class="ticker-wrapper">
+    <div class="ticker-track">
+      <div class="ticker-item">700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span></div>
+      <div class="ticker-item">700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span></div>
+    </div>
+  </div>
+
+  <!-- SEÇÃO 04 --- BENEFÍCIOS DO PRODUTO -->
+  <section class="sec-04">
+    <div class="section-content">
+      <h2>O que muda na sua vida com a <span>Minha Escolinha:</span></h2>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">📖</div>
+          <h3 class="benefit-title">Alfabetização Rápida</h3>
+          <p class="benefit-desc">Seu filho aprende a reconhecer letras e formar as primeiras palavras brincando.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">🧮</div>
+          <h3 class="benefit-title">Raciocínio Lógico</h3>
+          <p class="benefit-desc">Exercícios visuais de matemática que despertam a paixão pelos números desde cedo.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">📱</div>
+          <h3 class="benefit-title">Zero Telas e Celular</h3>
+          <p class="benefit-desc">Oportunidade perfeita para substituir o vício em vídeos por um hábito saudável de estudo.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">⏰</div>
+          <h3 class="benefit-title">Praticidade Para Você</h3>
+          <p class="benefit-desc">Arquivos prontos em PDF para baixar, imprimir e usar em menos de 2 minutos.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">🧠</div>
+          <h3 class="benefit-title">Foco e Concentração</h3>
+          <p class="benefit-desc">Atividades de traçado e pintura que desenvolvem a coordenação motora fina.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">🏡</div>
+          <h3 class="benefit-title">Orgulho na Família</h3>
+          <p class="benefit-desc">Ver seu filho evoluir a cada página preenchida, preparado para a escola.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TICKER 4 -->
+  <div class="ticker-wrapper">
+    <div class="ticker-track">
+      <div class="ticker-item">700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span></div>
+      <div class="ticker-item">700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span></div>
+    </div>
+  </div>
+
+  <!-- SEÇÃO 05 --- 3 BÔNUS EXCLUSIVOS -->
+  <section class="sec-05">
+    <div class="section-content">
+      <h2>Você também recebe estes <span>3 bônus exclusivos:</span></h2>
+      <div class="bonus-grid">
+        
+        <div class="bonus-card">
+          <div class="img-placeholder bonus-mockup" id="bonus1">[ Bonus 1 ]</div>
+          <span class="bonus-badge">BÔNUS 1</span>
+          <h3 class="bonus-name">Guia de Inglês Infantil Rápido</h3>
+          <p class="bonus-desc">Palavras e vocabulário básico ilustrado para seu filho aprender as primeiras palavras em inglês de forma leve.</p>
+          <div class="bonus-price">De <s>R$37</s> por <span class="bonus-price-zero">ZERO</span></div>
+        </div>
+
+        <div class="bonus-card">
+          <div class="img-placeholder bonus-mockup" id="bonus2">[ Bonus 2 ]</div>
+          <span class="bonus-badge">BÔNUS 2</span>
+          <h3 class="bonus-name">Pack de Atividades Cristãs</h3>
+          <p class="bonus-desc">Desenhos e tarefas com histórias bíblicas e princípios éticos para fortalecer os valores morais em família.</p>
+          <div class="bonus-price">De <s>R$47</s> por <span class="bonus-price-zero">ZERO</span></div>
+        </div>
+
+        <div class="bonus-card">
+          <div class="img-placeholder bonus-mockup" id="bonus3">[ Bonus 3 ]</div>
+          <span class="bonus-badge">BÔNUS 3</span>
+          <h3 class="bonus-name">Atualizações + Acesso Vitalício</h3>
+          <p class="bonus-desc">Garantia de novos cadernos de exercícios e suporte sem pagar nenhum centavo a mais no futuro.</p>
+          <div class="bonus-price">De <s>R$29</s> por <span class="bonus-price-zero">ZERO</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TICKER 5 -->
+  <div class="ticker-wrapper">
+    <div class="ticker-track">
+      <div class="ticker-item">700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span></div>
+      <div class="ticker-item">700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span></div>
+    </div>
+  </div>
+
+  <!-- SEÇÃO 06 --- GARANTIA -->
+  <section class="sec-06">
+    <div class="section-content">
+      <div class="guarantee-icon">🛡️</div>
+      <h2>Você tem <span>30 dias</span> para testar sem risco:</h2>
+      <p class="guarantee-text">
+        Eu confio tanto na qualidade do meu kit que se você baixar, imprimir e achar que não ajudou seu filho, eu devolvo 100% do seu dinheiro. Sem perguntas e sem burocracia.
+      </p>
+    </div>
+  </section>
+
+  <!-- TICKER 6 -->
+  <div class="ticker-wrapper">
+    <div class="ticker-track">
+      <div class="ticker-item">700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span></div>
+      <div class="ticker-item">700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span></div>
+    </div>
+  </div>
+
+  <!-- SEÇÃO 07 --- ESCOLHA SEU ACESSO -->
+  <section class="sec-07" id="oferta">
+    <div class="section-content">
+      <h2>Escolha como você quer <span>começar:</span></h2>
+      <p class="oferta-subheadline">Os dois liberam o acesso na hora. Os dois têm 30 dias de garantia.</p>
+
+      <div class="offers-grid">
+        
+        <!-- CARD BASIC -->
+        <div class="card-offer card-basic">
+          <div>
+            <h3 class="offer-title">Acesso Básico</h3>
+            <p class="offer-positioning">Pra quem quer o essencial e começar hoje.</p>
+            <div class="price-box">
+              <span class="price-old-val">19,90</span>
+              <div class="price-current-val">R$5,90</div>
+              <span class="price-period">Pagamento único</span>
+            </div>
+            <ul class="offer-list">
+              <li class="offer-item active"><span>✅ Pack com 700 Atividades Infantis</span></li>
+              <li class="offer-item blocked-red"><span>🔒 Módulo Completo de Português</span></li>
+              <li class="offer-item blocked-red"><span>🔒 Módulo Completo de Matemática</span></li>
+              <li class="offer-item blocked-red"><span>🔒 Módulo de Inglês Infantil</span></li>
+              <li class="offer-item blocked-red"><span>🔒 Módulo de Atividades Cristãs</span></li>
+              <li class="offer-item blocked-red"><span>🔒 Atualizações Gratuitas</span></li>
+              <li class="offer-item blocked-red"><span>🔒 Acesso Vitalício</span></li>
+            </ul>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/kaique.giongo/" target="_blank" rel="noopener noreferrer" class="btn-cta btn-basic-card">
+              SIM! ACESSAR POR R$5,90 →
+              <span class="btn-subtext">Pagamento Único · Acesso Vitalício</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD PREMIUM -->
+        <div class="card-offer card-premium">
+          <div class="ribbon-premium">MAIS ESCOLHIDO</div>
+          <div>
+            <h3 class="offer-title">Acesso Premium</h3>
+            <p class="offer-positioning">Pra quem quer o caminho inteiro, sem nenhum atalho faltando.</p>
+            <div class="price-box">
+              <span class="price-old-val">29,90</span>
+              <div class="price-current-val">R$9,90</div>
+              <span class="price-period">Pagamento único</span>
+            </div>
+            <ul class="offer-list">
+              <li class="offer-item active"><span>✅ Pack com 700 Atividades Infantis</span></li>
+              <li class="offer-item active"><span>✅ Módulo Completo de Português</span></li>
+              <li class="offer-item active"><span>✅ Módulo Completo de Matemática</span></li>
+              <li class="offer-item active"><span>✅ Módulo de Inglês Infantil</span></li>
+              <li class="offer-item active"><span>✅ Módulo de Atividades Cristãs</span></li>
+              <li class="offer-item active"><span>✅ Atualizações Gratuitas</span></li>
+              <li class="offer-item active"><span>✅ Acesso Vitalício</span></li>
+            </ul>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/kaique.giongo/" target="_blank" rel="noopener noreferrer" class="btn-cta">
+              SIM! QUERO O PREMIUM POR R$9,90 →
+              <span class="btn-subtext">Pagamento Único · Acesso Vitalício</span>
+            </a>
+            <div class="guarantee-mention">🔒 Garantia Incondicional de 30 Dias</div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="final-anchor">São R$4 de diferença pra levar tudo. Você decide.</p>
+    </div>
+  </section>
+
+  <!-- TICKER 7 -->
+  <div class="ticker-wrapper">
+    <div class="ticker-track">
+      <div class="ticker-item">700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span></div>
+      <div class="ticker-item">700 ATIVIDADES PRONTAS <span class="ticker-sep">✦</span> MAIS DE 1.200 MÃES APROVARAM <span class="ticker-sep">✦</span> ENSINO LÚDICO SEM TELAS <span class="ticker-sep">✦</span> DOWNLOAD IMEDIATO <span class="ticker-sep">✦</span> ACESSO VITALÍCIO <span class="ticker-sep">✦</span></div>
+    </div>
+  </div>
+
+  <!-- SEÇÃO 08 --- PERGUNTAS E RESPOSTAS -->
+  <section class="sec-08">
+    <div class="section-content">
+      <h2>Perguntas <span>frequentes:</span></h2>
+      <div class="faq-list">
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Será que eu vou conseguir ensinar meu filho com esse material?</span>
+            <span class="faq-arrow">▼</span>
+          </div>
+          <div class="faq-answer">
+            Sim! As atividades foram desenvolvidas de forma 100% intuitiva e lúdica. Você só precisa imprimir e entregar para a criança, sem precisar de conhecimento prévio em pedagogia.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Tenho pouco tempo no dia a dia, mesmo assim funciona?</span>
+            <span class="faq-arrow">▼</span>
+          </div>
+          <div class="faq-answer">
+            Com certeza. Apenas 15 a 20 minutos por dia já são suficientes para ter resultados incríveis no aprendizado e no foco da criança.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Meu filho é muito novo, ele vai aproveitar?</span>
+            <span class="faq-arrow">▼</span>
+          </div>
+          <div class="faq-answer">
+            O kit atende crianças de 2 a 8 anos, cobrindo desde os primeiros traçados motores até a alfabetização e matemática básica.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Preciso de impressora colorida para usar os exercícios?</span>
+            <span class="faq-arrow">▼</span>
+          </div>
+          <div class="faq-answer">
+            Não! Todas as 700 atividades foram desenhadas para ficarem perfeitas e super legíveis mesmo em impressão em preto e branco.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Vou receber algum livro impresso pelo correio?</span>
+            <span class="faq-arrow">▼</span>
+          </div>
+          <div class="faq-answer">
+            O produto é 100% digital em formato PDF. Isso permite que você receba o arquivo na hora no seu e-mail e possa imprimir quantas vezes quiser.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Como eu acesso depois que comprar?</span>
+            <span class="faq-arrow">▼</span>
+          </div>
+          <div class="faq-answer">
+            Logo após a confirmação do pagamento, você recebe um e-mail com o link direto para baixar todos os arquivos em PDF imediatamente.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>E se eu não gostar do material?</span>
+            <span class="faq-arrow">▼</span>
+          </div>
+          <div class="faq-answer">
+            Você tem 30 dias inteiros de garantia incondicional. Se você baixar, testar e achar que não valeu a pena, basta pedir o reembolso que devolvemos 100% do seu dinheiro.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 09 --- RODAPÉ -->
+  <footer>
+    <div class="section-content">
+      <div class="footer-brand">Minha Escolinha</div>
+      <div class="payment-icons">
+        <span>💳</span> <span>📱</span> <span>📄</span>
+      </div>
+      <div class="footer-links">
+        <a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a> | <a href="#">Suporte</a>
+      </div>
+      <p class="footer-disclaimer">
+        Este produto é digital e distribuído exclusivamente online. Os resultados variam de pessoa para pessoa e dependem do comprometimento individual com o método. Depoimentos refletem experiências individuais de clientes.
+      </p>
+      <p class="footer-copyright">
+        © 2026 Minha Escolinha
+      </p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    // Data atual na barra de urgência
+    document.addEventListener("DOMContentLoaded", function() {
+      const now = new Date();
+      const months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+      const day = String(now.getDate()).padStart(2, '0');
+      const month = months[now.getMonth()];
+      const dateEl = document.getElementById("current-date");
+      if (dateEl) {
+        dateEl.textContent = `${day} de ${month}`;
+      }
+    });
+
+    // Mobile Intersection Observer para Seção 04
+    if (window.innerWidth < 768) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('mobile-active');
+          } else {
+            entry.target.classList.remove('mobile-active');
+          }
+        });
+      }, { threshold: 1.0 });
+
+      document.querySelectorAll('.benefit-card').forEach(card => {
+        observer.observe(card);
+      });
+    }
+
+    // Accordion Seção 08
+    document.querySelectorAll('.faq-item').forEach(item => {
+      const summary = item.querySelector('.faq-question');
+      summary.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) {
+          item.classList.add('open');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
