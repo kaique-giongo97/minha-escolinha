@@ -590,25 +590,21 @@
       transition: all 0.3s ease;
     }
 
-    /* CARD BÁSICO COM COR MAIS FRACA PARA ALTO CONTRASTE */
+    /* CARD BÁSICO COM TOM ESCURO E DISCRETO (SEM APAGAR A OPACIDADE) */
     .card-basic {
       order: 1;
-      background: rgba(255, 255, 255, 0.04);
-      backdrop-filter: blur(12px) saturate(140%);
-      -webkit-backdrop-filter: blur(12px) saturate(140%);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-      opacity: 0.78;
+      background: linear-gradient(160deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02) 45%, rgba(255, 255, 255, 0.05));
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+      opacity: 1;
     }
 
-    .card-basic:hover {
-      opacity: 0.95;
-    }
-
-    /* CARD PREMIUM COM DESTAQUE VIBRANTE */
+    /* CARD PREMIUM COM DESTAQUE VIBRANTE E IMPOSTOR */
     .card-premium {
       order: 2;
-      background: linear-gradient(160deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.05) 45%, rgba(255, 255, 255, 0.10));
+      background: linear-gradient(160deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05) 45%, rgba(255, 255, 255, 0.10));
       backdrop-filter: blur(20px) saturate(180%);
       -webkit-backdrop-filter: blur(20px) saturate(180%);
       border: 2px solid #10b981;
@@ -742,7 +738,7 @@
     }
 
     .btn-basic-card {
-      opacity: 0.85;
+      opacity: 0.9;
     }
 
     .btn-cta:hover {
@@ -1147,7 +1143,7 @@
             <h3 class="offer-title">Acesso Premium</h3>
             <p class="offer-positioning">Pra quem quer o caminho inteiro, sem nenhum atalho faltando.</p>
             <div class="price-box">
-              <span class="price-old-val">49,90</span>
+              <span class="price-old-val">97,00</span>
               <div class="price-current-val">R$9,90</div>
               <span class="price-period">Pagamento único</span>
             </div>
