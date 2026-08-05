@@ -236,14 +236,17 @@
 
     #hero-mockup {
       width: 85%;
-      height: 280px;
+      height: auto;
+      max-height: 380px;
+      object-fit: contain;
+      display: block;
       margin: 20px auto 0 auto;
     }
 
     @media (min-width: 768px) {
       #hero-mockup {
         width: 100%;
-        height: 400px;
+        max-height: 480px;
         margin: 0;
       }
     }
@@ -464,6 +467,7 @@
     .bonus-mockup {
       width: 100%;
       height: 180px;
+      object-fit: contain;
       margin-bottom: 16px;
     }
 
@@ -880,9 +884,7 @@
         </p>
       </div>
       <div class="hero-container-2">
-        <div class="img-placeholder" id="hero-mockup">
-          [ Imagem do Produto ]
-        </div>
+        <img src="hero-mockup.png" alt="+700 Atividades Infantis Prontas" id="hero-mockup">
       </div>
     </div>
   </section>
@@ -1007,7 +1009,7 @@
       <div class="bonus-grid">
         
         <div class="bonus-card">
-          <div class="img-placeholder bonus-mockup" id="bonus1">[ Bonus 1 ]</div>
+          <img src="bonus1.png" alt="Guia de Inglês Infantil Rápido" class="bonus-mockup" id="bonus1">
           <span class="bonus-badge">BÔNUS 1</span>
           <h3 class="bonus-name">Guia de Inglês Infantil Rápido</h3>
           <p class="bonus-desc">Palavras e vocabulário básico ilustrado para seu filho <strong>aprender as primeiras palavras em inglês</strong> de forma leve.</p>
@@ -1015,7 +1017,7 @@
         </div>
 
         <div class="bonus-card">
-          <div class="img-placeholder bonus-mockup" id="bonus2">[ Bonus 2 ]</div>
+          <img src="bonus2.png" alt="Pack de Atividades Cristãs" class="bonus-mockup" id="bonus2">
           <span class="bonus-badge">BÔNUS 2</span>
           <h3 class="bonus-name">Pack de Atividades Cristãs</h3>
           <p class="bonus-desc">Desenhos e tarefas com histórias bíblicas e princípios éticos para <strong>fortalecer os valores morais em família</strong>.</p>
@@ -1023,7 +1025,7 @@
         </div>
 
         <div class="bonus-card">
-          <div class="img-placeholder bonus-mockup" id="bonus3">[ Bonus 3 ]</div>
+          <img src="bonus3.png" alt="Atualizações + Acesso Vitalício" class="bonus-mockup" id="bonus3">
           <span class="bonus-badge">BÔNUS 3</span>
           <h3 class="bonus-name">Atualizações + Acesso Vitalício</h3>
           <p class="bonus-desc">Garantia de novos cadernos de exercícios e suporte <strong>sem pagar nenhum centavo a mais</strong> no futuro.</p>
