@@ -330,17 +330,19 @@
 
     .demo-slide-card {
       width: 70vw;
-      aspect-ratio: 4/5;
       height: auto;
+      max-height: 380px;
+      object-fit: contain;
       flex-shrink: 0;
-      border-radius: 0;
-      border: 1px dashed rgba(255, 255, 255, 0.2);
-      background-color: #1e293b;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      display: block;
+      background-color: #0b0f19;
     }
 
     @media (min-width: 768px) {
       .demo-slide-card {
         width: 320px;
+        max-height: 420px;
       }
     }
 
@@ -913,20 +915,18 @@
 
     <div class="demo-slideshow-wrapper">
       <div class="demo-slideshow-track">
-        <!-- 6 slides originais -->
-        <div class="img-placeholder demo-slide-card" id="demo-slide1">[ Amostra 1 ]</div>
-        <div class="img-placeholder demo-slide-card" id="demo-slide2">[ Amostra 2 ]</div>
-        <div class="img-placeholder demo-slide-card" id="demo-slide3">[ Amostra 3 ]</div>
-        <div class="img-placeholder demo-slide-card" id="demo-slide4">[ Amostra 4 ]</div>
-        <div class="img-placeholder demo-slide-card" id="demo-slide5">[ Amostra 5 ]</div>
-        <div class="img-placeholder demo-slide-card" id="demo-slide6">[ Amostra 6 ]</div>
-        <!-- 6 slides cópias idênticas para o loop infinito sem emenda -->
-        <div class="img-placeholder demo-slide-card">[ Amostra 1 ]</div>
-        <div class="img-placeholder demo-slide-card">[ Amostra 2 ]</div>
-        <div class="img-placeholder demo-slide-card">[ Amostra 3 ]</div>
-        <div class="img-placeholder demo-slide-card">[ Amostra 4 ]</div>
-        <div class="img-placeholder demo-slide-card">[ Amostra 5 ]</div>
-        <div class="img-placeholder demo-slide-card">[ Amostra 6 ]</div>
+        <!-- 5 slides originais -->
+        <img src="amostra1.jpg" alt="Amostra 1" class="demo-slide-card" id="demo-slide1">
+        <img src="amostra2.jpg" alt="Amostra 2" class="demo-slide-card" id="demo-slide2">
+        <img src="amostra3.jpg" alt="Amostra 3" class="demo-slide-card" id="demo-slide3">
+        <img src="amostra4.jpg" alt="Amostra 4" class="demo-slide-card" id="demo-slide4">
+        <img src="amostra5.jpg" alt="Amostra 5" class="demo-slide-card" id="demo-slide5">
+        <!-- 5 slides cópias idênticas para o loop infinito sem emenda -->
+        <img src="amostra1.jpg" alt="Amostra 1" class="demo-slide-card">
+        <img src="amostra2.jpg" alt="Amostra 2" class="demo-slide-card">
+        <img src="amostra3.jpg" alt="Amostra 3" class="demo-slide-card">
+        <img src="amostra4.jpg" alt="Amostra 4" class="demo-slide-card">
+        <img src="amostra5.jpg" alt="Amostra 5" class="demo-slide-card">
       </div>
     </div>
   </section>
