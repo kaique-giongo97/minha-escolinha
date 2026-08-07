@@ -443,6 +443,38 @@
       100% { transform: translateX(-50%); }
     }
 
+    .demo-persuasive-box {
+      max-width: 720px;
+      margin: 32px auto 0 auto;
+      padding: 18px 20px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 87, 87, 0.25);
+      border-radius: 16px;
+      text-align: center;
+    }
+
+    .demo-persuasive-text {
+      font-size: 16px;
+      line-height: 1.45;
+      color: #e2e8f0;
+      margin: 0;
+    }
+
+    .demo-persuasive-text strong {
+      color: #ffffff;
+    }
+
+    .demo-persuasive-text span {
+      color: #ff5757;
+      font-weight: 700;
+    }
+
+    @media (min-width: 768px) {
+      .demo-persuasive-text {
+        font-size: 18px;
+      }
+    }
+
     /* SEÇÃO 04 --- BENEFÍCIOS DO PRODUTO */
     .sec-04 {
       background-color: #ffffff;
@@ -670,8 +702,8 @@
       .offers-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 24px;
-        align-items: stretch;
+        gap: 28px;
+        align-items: flex-start;
       }
     }
 
@@ -711,12 +743,13 @@
       .card-basic {
         order: 1;
         transform: scale(0.92);
+        transform-origin: top center;
         opacity: 0.85;
-        align-self: center;
       }
       .card-premium {
         order: 2;
         transform: scale(1.06);
+        transform-origin: top center;
         z-index: 2;
       }
     }
@@ -1042,6 +1075,14 @@
         <img src="amostra3.jpg" alt="Amostra 3" class="demo-slide-card">
         <img src="amostra4.jpg" alt="Amostra 4" class="demo-slide-card">
         <img src="amostra5.jpg" alt="Amostra 5" class="demo-slide-card">
+      </div>
+    </div>
+
+    <div class="section-content">
+      <div class="demo-persuasive-box">
+        <p class="demo-persuasive-text">
+          <strong>Atividades 100% estruturadas e prontas para usar.</strong> Elaboradas por pedagogas e psicólogas infantis para acelerar a alfabetização, fortalecer a coordenação motora e prender a atenção do seu filho longe das telas — <span>basta imprimir ou abrir no tablet!</span>
+        </p>
       </div>
     </div>
   </section>
