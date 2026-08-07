@@ -86,6 +86,16 @@
       line-height: 1.18;
     }
 
+    h2::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(135deg, #ff5757, #818cf8);
+      border-radius: 999px;
+      margin: 16px auto 0 auto;
+    }
+
     p, li, label {
       letter-spacing: -0.03em;
       line-height: 1.18;
@@ -191,11 +201,6 @@
       }
     }
 
-    .hero-container-2 {
-      flex: 1;
-      width: 100%;
-    }
-
     .hero-headline {
       font-size: 29px;
       line-height: 1.15;
@@ -234,21 +239,84 @@
       }
     }
 
-    #hero-mockup {
+    .hero-mockup-mobile {
+      display: block;
+      width: 100%;
+      margin: 15px auto 20px auto;
+      text-align: center;
+    }
+
+    .hero-mockup-mobile img {
       width: 85%;
       height: auto;
       max-height: 380px;
       object-fit: contain;
       display: block;
-      margin: 20px auto 0 auto;
+      margin: 0 auto;
+    }
+
+    .hero-container-2 {
+      display: none;
     }
 
     @media (min-width: 768px) {
-      #hero-mockup {
-        width: 100%;
-        max-height: 480px;
-        margin: 0;
+      .hero-mockup-mobile {
+        display: none;
       }
+      .hero-container-2 {
+        display: block;
+        flex: 1;
+        width: 100%;
+      }
+    }
+
+    #hero-mockup {
+      width: 100%;
+      height: auto;
+      max-height: 480px;
+      object-fit: contain;
+      display: block;
+      margin: 0;
+    }
+
+    .hero-btn-cta {
+      margin-top: 24px;
+      width: 100%;
+    }
+
+    .hero-bullets {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 16px;
+      align-items: center;
+    }
+
+    @media (min-width: 768px) {
+      .hero-bullets {
+        align-items: flex-start;
+        margin-top: 20px;
+      }
+    }
+
+    .hero-bullet-item {
+      font-size: 15px;
+      font-weight: 700;
+      color: #374151;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .card-premium-mockup {
+      width: 100%;
+      max-width: 190px;
+      height: auto;
+      max-height: 130px;
+      object-fit: contain;
+      display: block;
+      margin: 10px auto 14px auto;
+      filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
     }
 
     /* TICKER ROLANTE - DEEP MIDNIGHT VIOLET */
@@ -881,9 +949,21 @@
         <h1 class="hero-headline">
           <span>+700 Atividades Prontas</span> Para Desenvolver a <span>Alfabetização, Coordenação e Raciocínio</span> do Seu Filho
         </h1>
+        <div class="hero-mockup-mobile">
+          <img src="hero-mockup.png" alt="+700 Atividades Infantis Prontas">
+        </div>
         <p class="hero-subheadline">
           Acervo completo criado por <span>pedagogas e psicólogas infantis</span> com atividades prontas para <span>imprimir ou usar no tablet</span>.
         </p>
+        <a href="#oferta" class="btn-cta hero-btn-cta">
+          QUERO AS ATIVIDADES AGORA →
+          <span class="btn-subtext">Acesso Imediato · Garantia de 30 Dias</span>
+        </a>
+        <div class="hero-bullets">
+          <div class="hero-bullet-item">⚡ <span>Acesso Imediato no Seu E-mail</span></div>
+          <div class="hero-bullet-item">🎁 <span>+3 Bônus Exclusivos Inclusos</span></div>
+          <div class="hero-bullet-item">🛡️ <span>Garantia Incondicional de 30 Dias</span></div>
+        </div>
       </div>
       <div class="hero-container-2">
         <img src="hero-mockup.png" alt="+700 Atividades Infantis Prontas" id="hero-mockup">
@@ -1117,6 +1197,7 @@
         <div class="card-offer card-premium">
           <div class="ribbon-premium">MAIS ESCOLHIDO</div>
           <div>
+            <img src="hero-mockup.png" alt="Acervo completo Minha Escolinha" class="card-premium-mockup">
             <h3 class="offer-title">Acesso Premium</h3>
             <div class="price-box">
               <span class="price-old-val">97,00</span>
