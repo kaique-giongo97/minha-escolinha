@@ -291,12 +291,14 @@
     .hero-bullets {
       display: flex;
       flex-direction: row;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      gap: 8px;
+      gap: 6px 12px;
       margin-top: 16px;
       width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
     }
 
     @media (min-width: 768px) {
@@ -308,27 +310,19 @@
     }
 
     .hero-bullet-item {
-      font-size: 11px;
+      font-size: 12px;
       font-weight: 700;
       color: #374151;
       display: flex;
       align-items: center;
       gap: 4px;
       white-space: nowrap;
-      flex-shrink: 0;
-    }
-
-    @media (min-width: 400px) {
-      .hero-bullet-item {
-        font-size: 12px;
-        gap: 5px;
-      }
     }
 
     @media (min-width: 768px) {
       .hero-bullet-item {
         font-size: 15px;
-        gap: 8px;
+        gap: 6px;
       }
     }
 
@@ -1028,9 +1022,9 @@
           <span class="btn-subtext">Acesso Imediato · Garantia de 30 Dias</span>
         </a>
         <div class="hero-bullets">
-          <div class="hero-bullet-item">⚡ <span>Acesso Imediato no Seu E-mail</span></div>
-          <div class="hero-bullet-item">🎁 <span>+3 Bônus Exclusivos Inclusos</span></div>
-          <div class="hero-bullet-item">🛡️ <span>Garantia Incondicional de 30 Dias</span></div>
+          <div class="hero-bullet-item">⚡ <span>Acesso Imediato</span></div>
+          <div class="hero-bullet-item">🎁 <span>+3 Bônus Grátis</span></div>
+          <div class="hero-bullet-item">🛡️ <span>Garantia de 30 Dias</span></div>
         </div>
       </div>
       <div class="hero-container-2">
