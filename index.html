@@ -91,9 +91,13 @@
       display: block;
       width: 80px;
       height: 4px;
-      background: linear-gradient(135deg, #ff5757, #818cf8);
+      background: #ff5757;
       border-radius: 999px;
       margin: 16px auto 0 auto;
+    }
+
+    h2:has(span)::after {
+      background: linear-gradient(135deg, #ff5757, #818cf8);
     }
 
     p, li, label {
@@ -286,26 +290,35 @@
 
     .hero-bullets {
       display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin-top: 16px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
       align-items: center;
+      gap: 10px 16px;
+      margin-top: 16px;
     }
 
     @media (min-width: 768px) {
       .hero-bullets {
-        align-items: flex-start;
+        justify-content: flex-start;
         margin-top: 20px;
       }
     }
 
     .hero-bullet-item {
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 700;
       color: #374151;
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 6px;
+      white-space: nowrap;
+    }
+
+    @media (min-width: 768px) {
+      .hero-bullet-item {
+        font-size: 15px;
+      }
     }
 
     .card-premium-mockup {
@@ -679,10 +692,14 @@
     @media (min-width: 768px) {
       .card-basic {
         order: 1;
+        transform: scale(0.92);
+        opacity: 0.85;
+        align-self: center;
       }
       .card-premium {
         order: 2;
-        transform: scale(1.04);
+        transform: scale(1.06);
+        z-index: 2;
       }
     }
 
@@ -1136,7 +1153,7 @@
   <section class="sec-06">
     <div class="section-content">
       <div class="guarantee-icon">🛡️</div>
-      <h2>Você tem <span>30 dias</span> para testar sem risco:</h2>
+      <h2>Risco Zero: <span>Garantia de 30 Dias</span></h2>
       <p class="guarantee-text">
         Eu confio tanto na qualidade do nosso acervo que se você baixar, testar no tablet ou imprimir e achar que não ajudou seu filho, eu <strong>devolvo 100% do seu dinheiro</strong>. Sem perguntas e <strong>sem burocracia</strong>.
       </p>
